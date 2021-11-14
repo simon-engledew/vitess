@@ -1,4 +1,5 @@
 .button {
+    @apply text-base;
     background: var(--colorPrimary);
     border: solid 2px var(--colorPrimary);
     border-radius: 6px;
@@ -6,7 +7,6 @@
     color: var(--textColorInverted);
     cursor: pointer;
     font-family: var(--fontFamilyPrimary);
-    font-size: var(--fontSizeDefault);
     font-weight: 500;
     height: var(--inputHeightMedium);
     line-height: 1;
@@ -69,14 +69,14 @@
 }
 
 .button.sizeLarge {
-    font-size: var(--fontSizeLarge);
+    @apply text-lg;
     height: var(--inputHeightLarge);
     padding: 0 16px;
 }
 
 .button.sizeSmall {
+    @apply text-sm;
     border-width: 1px;
-    font-size: var(--fontSizeSmall);
     height: var(--inputHeightSmall);
     padding: 0 6px;
 }

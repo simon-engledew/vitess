@@ -34,10 +34,10 @@
 }
 
 .placeholder {
+    @apply text-lg;
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: var(--fontSizeLarge);
     justify-content: center;
     margin: 25vh auto;
     max-width: 720px;

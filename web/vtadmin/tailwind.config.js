@@ -25,6 +25,11 @@ module.exports = {
                 'sans-serif',
             ],
         },
+        fontSize: {
+            'sm': '1.2rem',
+            'base': '1.4rem',
+            'lg': '1.6rem',
+        }
     },
     variants: {
         extend: {},

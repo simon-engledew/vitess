@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 .placeholder {
+    @apply text-lg;
     color: var(--textColorSecondary);
-    font-size: var(--fontSizeLarge);
     padding: 10vh 2.4rem;
     text-align: center;
 }

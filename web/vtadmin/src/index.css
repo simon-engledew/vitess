@@ -44,9 +44,6 @@
     --fontFamilyMonospace: theme('fontFamily.mono');
 
     /* Body text */
-    --fontSizeDefault: 1.4rem;
-    --fontSizeLarge: 1.6rem;
-    --fontSizeSmall: 1.2rem;
     --lineHeightBody: 1.36;
 
     /* Headings */
@@ -127,9 +124,9 @@ html {
 }
 
 body {
+    @apply text-base;
     background: var(--backgroundPrimary);
     color: var(--textColorPrimary);
-    font-size: var(--fontSizeDefault);
     line-height: var(--lineHeightBody);
     margin: 0;
     font-family: var(--fontFamilyPrimary);
@@ -187,20 +184,20 @@ table {
 }
 
 table caption {
+    @apply text-base;
     background: var(--backgroundSecondary);
     color: var(--textColorPrimary);
-    font-size: var(--fontSizeDefault);
     font-weight: 500;
     padding: 1.2rem var(--tableCellPadding) 0.8rem var(--tableCellPadding);
     text-align: left;
 }
 
 table th {
+    @apply text-base;
     background: var(--backgroundSecondary);
     border: solid 1px var(--backgroundSecondary);
     border-bottom-color: var(--tableBorderColor);
     color: var(--textColorSecondary);
-    font-size: var(--fontSizeDefault);
     font-weight: 500;
     padding: 8px var(--tableCellPadding);
     text-align: left;
@@ -218,9 +215,4 @@ table tbody td {
 
 table tbody td[rowSpan] {
     border-right: solid 1px var(--tableBorderColor);
-}
-
-/* One-liner utilities */
-.font-size-small {
-    font-size: var(--fontSizeSmall);
 }

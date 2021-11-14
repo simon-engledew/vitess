@@ -13,6 +13,7 @@ $iconPositionHorizontal: 1.2rem;
 $iconPositionHorizontalLarge: 1.6rem;
 
 .input {
+    @apply text-base;
     background: var(--backgroundPrimary);
     border: solid 2px var(--colorDisabled);
     border-radius: 6px;
@@ -20,7 +21,6 @@ $iconPositionHorizontalLarge: 1.6rem;
     color: var(--textColorPrimary);
     display: block;
     font-family: var(--fontFamilyPrimary);
-    font-size: var(--fontSizeBody);
     height: var(--inputHeightMedium);
     line-height: var(--inputHeightMedium);
     padding: 0 12px;
@@ -34,7 +34,7 @@ $iconPositionHorizontalLarge: 1.6rem;
     }
 
     &.large {
-        font-size: var(--fontSizeLarge);
+        @apply text-lg;
         height: var(--inputHeightLarge);
         line-height: var(--inputHeightLarge);
         padding: 0 16px;

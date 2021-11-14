@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 .shardList {
+    @apply text-sm;
     color: var(--textColorSecondary);
-    font-size: var(--fontSizeSmall);
     max-width: 20rem;
     padding-right: 24px;
 }

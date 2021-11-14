@@ -60,9 +60,9 @@ $colors: #8187ff #b17ff5 #d676e5 #f26fd1 #ff6bbb #ff6ca3 #ff738c #ff7e75 #ff8c60
 }
 
 .highcharts-loading-inner {
+    @apply text-lg;
     color: var(--textColorSecondary);
     font-family: var(--fontFamilyPrimary);
-    font-size: var(--fontSizeLarge);
     font-weight: 500;
 }
 

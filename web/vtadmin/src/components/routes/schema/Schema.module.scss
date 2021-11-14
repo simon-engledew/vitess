@@ -47,10 +47,10 @@
 }
 
 .errorPlaceholder {
+    @apply text-lg;
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: var(--fontSizeLarge);
     justify-content: center;
     margin: 25vh auto;
     max-width: 720px;
@@ -67,12 +67,12 @@
 }
 
 .skBadge {
+    @apply text-sm;
     border: solid 1px var(--colorPrimary50);
     border-radius: 6px;
     color: var(--colorPrimary);
     cursor: default;
     display: inline-block;
-    font-size: var(--fontSizeSmall);
     margin: 0 12px;
     padding: 4px 8px;
     text-transform: uppercase;

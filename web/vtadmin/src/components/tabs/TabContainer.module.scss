@@ -23,11 +23,11 @@
     position: relative;
 
     &.small {
-        font-size: var(--fontSizeSmall);
+        @apply text-sm;
     }
 
     &.large {
-        font-size: var(--fontSizeLarge);
+        @apply text-lg;
     }
 
     &::after {
