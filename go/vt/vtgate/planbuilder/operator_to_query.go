@@ -254,7 +254,7 @@ func (qb *queryBuilder) Less(i, j int) bool {
 // Swap implements the Sort interface
 func (qb *queryBuilder) Swap(i, j int) {
 	sel, isSel := qb.sel.(*sqlparser.Select)
-	if isSel {
+	if isSel && j < len(sel.From) && i < len(sel.From) {
 		sel.From[i], sel.From[j] = sel.From[j], sel.From[i]
 	}
 	qb.tableIDsInFrom[i], qb.tableIDsInFrom[j] = qb.tableIDsInFrom[j], qb.tableIDsInFrom[i]
