@@ -146,6 +146,9 @@ func BuildBindVariable(v any) (*querypb.BindVariable, error) {
 	case string:
 		return StringBindVariable(v), nil
 	case []byte:
+		if v == nil {
+			return NullBindVariable, nil
+		}
 		return BytesBindVariable(v), nil
 	case bool:
 		if v {
